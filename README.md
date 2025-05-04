@@ -45,6 +45,7 @@ Then create your nodes, we will create two nodes one sender node and one recieve
 
 
 iii. **Configuration of setup.py**
+
 In this file, you will create entry points to facilitate executions of each node.
 the entry point refers to the starting point of an executable or a node, where the ROS 2 system begins its execution.
 
@@ -72,6 +73,7 @@ In this file, you have to add a node. You will have to provide :
 - The name of the node 
 NB: the name arguement renames the node already named in the **.py**  file of each node during construction.
 *If you launch the nodes without launch files they will have different names of nodes ie they will have the names passed in the node constructor*  (see ***/ressources*** directory ).
+
 ```
   launch_ros.actions.Node(
          package='first_project',
